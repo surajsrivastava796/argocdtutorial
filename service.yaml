@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: argocd-myapp
   namespace: suraj-space
 spec:
   type: LoadBalancer
   selector:
-    name: myapp
+    name: argocd-myapp
   ports:
   - port: 80
     targetPort: 80
